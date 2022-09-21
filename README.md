@@ -32,6 +32,11 @@ NOTE: This tool only works for .EEG and .EE_ files from NEURO PRAX. The folder i
 ```
 import os
 from neuropraxpy.reader.load import pickle_jar, load_pickle
+import mne
+import numpy as np
+import yasa
+from matplotlib import pyplot as plt
+
 
 # set the working directory to the folder with the pickle files
 os.chdir(r"C:\path\to\pickle\files\eingelegt")
